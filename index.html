@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boll Bouncing</title>
+    <style>
+        .container {
+            width: 70vw;
+            height: 70vh;
+            background-color: rgb(236, 249, 138);
+            position: relative;
+        }
+
+        .boll {
+            background-color: red;
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            text-align: center;
+            position: absolute;
+            animation: AnimationX 3s linear infinite,
+                AnimationY 700ms ease-out infinite alternate;
+        }
+
+        @keyframes AnimationX {
+            from {
+                left: 0%;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes AnimationY {
+            from {
+                bottom: 0%;
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="boll">
+
+        </div>
+    </div>
+</body>
+
+</html>
